@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './components/artist.dart';
+import './components/artist_card.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -30,7 +31,8 @@ class _MyApp extends State<MyApp> {
     return MaterialApp(
 			title: 'Flutter Demo',
 			theme: ThemeData(primarySwatch: Colors.blue),
-			home: _index == 1 ? const Artist() : const Home(),
+//			home: _index == 1 ? const Artist() : const Home(),
+			home: const Artists()
 		);
   }
 }
