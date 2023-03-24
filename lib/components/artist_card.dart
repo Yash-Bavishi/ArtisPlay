@@ -49,22 +49,17 @@ class _ArtistsState extends State<Artists> {
 							Row(
 										children: [
 											ElevatedButton(
-												child: Text('<'),
-												style: ButtonStyle(
-													backgroundColor: MaterialStatePropertyAll<Color>(Color.fromRGBO(119,68,121,1),
-													),
-												shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
-														RoundedRectangleBorder(
-															borderRadius: BorderRadius.circular(100)
+												onPressed: () { print('hello'); },
+												child: Icon(Icons.arrow_left),
+												style: ElevatedButton.styleFrom(
+													shape: RoundedRectangleBorder(
+														borderRadius: BorderRadius.circular(50)
 													)
-													),
-												),
-												onPressed: () {
-													print('konichiva');
-													}
-											)
+												)
+											)	
 									],
 										crossAxisAlignment: CrossAxisAlignment.end,
+										mainAxisAlignment: MainAxisAlignment.spaceBetween,
 									)
 						],
 							),
